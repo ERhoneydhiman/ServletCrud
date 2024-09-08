@@ -1,6 +1,5 @@
 package com.controller;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -17,7 +16,7 @@ public class ServletListners implements ServletContextListener{
 	
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
-		ServletContext context = sce.getServletContext();
-		System.out.println("ended:"+context.getContextPath());
+		
+		System.out.println("ended:");
 	}
 }
