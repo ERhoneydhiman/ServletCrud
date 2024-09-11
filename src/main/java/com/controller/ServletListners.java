@@ -7,7 +7,7 @@ import javax.servlet.annotation.WebListener;
 
 
 
-@WebListener("/servletListner")
+//@WebListener
 public class ServletListners implements ServletContextListener{
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {

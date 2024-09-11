@@ -19,7 +19,7 @@
     <servlet-name>ReadServlet</servlet-name>
     <url-pattern>/ReadServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
+<servlet>
     <description></description>
     <display-name>SignupServlet</display-name>
     <servlet-name>SignupServlet</servlet-name>
@@ -79,4 +79,21 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
+  
+  <!-- Filter Definition -->
+    <filter>
+        <filter-name>SignupFilter</filter-name>
+        <filter-class>com.filter.FilterExample</filter-class>
+    </filter>
+
+    <!-- Filter Mapping -->
+    <filter-mapping>
+        <filter-name>SignupFilter</filter-name>
+        <url-pattern>/SignupServlet</url-pattern>
+    </filter-mapping>
+    
+  <listener>
+    <listener-class>com.controller.ServletListners</listener-class>
+</listener>
+  
 </web-app>
